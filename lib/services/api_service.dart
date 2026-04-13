@@ -19,8 +19,9 @@ class ApiService {
         };
       }
 
+      debugPrint('Calling URL: ${AppConfig.baseUrl}/api/v1/login');
       final response = await http.post(
-        Uri.parse('${AppConfig.baseUrl}/login'),
+        Uri.parse('${AppConfig.baseUrl}/api/v1/login'),
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
@@ -76,7 +77,7 @@ class ApiService {
       }
 
       final response = await http.post(
-        Uri.parse('${AppConfig.baseUrl}/register'),
+        Uri.parse('${AppConfig.baseUrl}/api/v1/register'),
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
