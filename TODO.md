@@ -1,0 +1,27 @@
+# Flutter API Connection Fix - TODO
+
+## Status: In Progress
+
+### Step 1: [✅ DONE] Add INTERNET permission to AndroidManifest.xml
+- Edit `android/app/src/main/AndroidManifest.xml`
+
+### Step 2: [✅ DONE] Update pubspec.yaml with connectivity_plus
+- Add dependency ✓
+- Run `flutter pub get` ✓
+
+### Step 3: [✅ DONE] Create app_config.dart
+- New file `lib/config/app_config.dart` ✓
+
+### Step 4: [IN PROGRESS] Update api_service.dart
+- Add timeout ✓, connectivity ✓, config baseUrl ✓, better errors ✓
+
+### Step 5: [PENDING] Update register_screen.dart & login_screen.dart
+- Add connectivity checks
+
+### Step 6: [PENDING] Test & Verify
+- `flutter pub get`
+- `flutter run` (emulator)
+- Start backend at localhost:8000
+- Test register/login
+
+**Next Action:** Start Step 1
